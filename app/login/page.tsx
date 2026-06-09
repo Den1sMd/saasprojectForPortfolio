@@ -26,7 +26,7 @@ export default function Login() {
     }
   }, [])
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: any) => {   //any pour le ts
     e.preventDefault();
     setLoading(true);
 
