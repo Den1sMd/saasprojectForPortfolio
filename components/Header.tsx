@@ -32,7 +32,7 @@ export default function Header() {
 
           if (res.ok) {
             const data = await res.json();
-            const totalArticles = data.basket.reduce((acc, item) => acc + item.quantity, 0);
+            const totalArticles = data.basket.reduce((acc: any, item: any) => acc + item.quantity, 0);
           
           setPanierCount(totalArticles);
           }
